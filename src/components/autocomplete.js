@@ -2,10 +2,13 @@ import algoliasearch from 'algoliasearch';
 import instantsearch from 'instantsearch.js';
 
 // Instant Search Widgets
-import { hits, searchBox, configure } from 'instantsearch.js/es/widgets';
+import { hits, searchBox, configure, index } from 'instantsearch.js/es/widgets';
 
 // Autocomplete Template
 import autocompleteProductTemplate from '../templates/autocomplete-product';
+
+// Query Suggestion Template
+import querySuggestionTemplate from '../templates/querySuggestions';
 
 /**
  * @class Autocomplete
@@ -25,20 +28,22 @@ class Autocomplete {
    * @private
    * Handles creating the search client and creating an instance of instant search
    * @return {void}
-   */
+   *
+  */
   _registerClient() {
     this._searchClient = algoliasearch(
-      'VYLEWMPKEZ',
-      '8940a18fde155adf3f74b0912c267aa4'
+      'TMTMOSOUOG',
+      '6436a9e0a3ab058db9e9723ce53e5533'
     );
 
     this._searchInstance = instantsearch({
-      indexName: 'ecommerce-v2',
+      indexName: 'dev_ecommerce',
       searchClient: this._searchClient,
     });
   }
 
-  /**
+
+  /*
    * @private
    * Adds widgets to the Algolia instant search instance
    * @return {void}
@@ -55,8 +60,22 @@ class Autocomplete {
         container: '#autocomplete-hits',
         templates: { item: autocompleteProductTemplate },
       }),
+      index({ indexName: 'dev_ecommerce_query_suggestions' })
+        .addWidgets([
+          configure({
+            hitsPerPage: 2,
+          }),
+          hits({
+            container: '#suggestions-hits',
+            templates: {
+              item: querySuggestionTemplate,
+              empty: '<div>No suggestions</div>'
+            }
+          })
+        ])
     ]);
   }
+
 
   /**
    * @private
