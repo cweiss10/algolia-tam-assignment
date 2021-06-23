@@ -19,7 +19,11 @@
     "prettier": "1.16.4"
   },
   "dependencies": {
+    "@algolia/autocomplete-js": "^1.1.0",
+    "@algolia/autocomplete-plugin-recent-searches": "^1.1.0",
+    "@algolia/client-search": "^4.9.3",
     "algoliasearch": "^3.35.1",
-    "instantsearch.js": "^4.0.0"
+    "instantsearch.js": "^4.0.0",
+    "react-instantsearch-dom": "^6.11.1"
   }
 }
