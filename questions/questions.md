@@ -29,6 +29,7 @@ The other way to manage indices is directly through our API Client. If you are l
 Please let me know if there is any other way that I can help. I am happy to set up a quick call to go over ways to make this process easier.
 
 Thanks,
+
 Cat Weiss
 
 --
@@ -58,7 +59,9 @@ If this does not free up enough space, we could look into upgrading your plan. A
 Please let me know if you have any further questions or would like to set up a call to discuss solutions. I know this is an urgent issue, and hopefully we can resolve it quickly.
 
 Thanks,
+
 Cat Weiss
+
 --
 
 *Question 3*:   
@@ -84,4 +87,5 @@ Please note that SearchKit is toolkit that is not maintained by Algolia. It may 
 Please let me know if there is any way for me to be of further assistance.
 
 Thanks,
+
 Cat Weiss
