@@ -15,6 +15,12 @@
   border: 0;
 }
 
+.ais-Hits-item:hover {
+  background-color:	#F0F0F0;
+  cursor: pointer;
+  width:100%;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -106,6 +112,12 @@
   font-size: 12px;
 }
 
+
+/* Suggestions */
+#suggestions-hits {
+  width: 100%;
+}
+
 /*Results*/
 .results {
   max-width: 1200px;
@@ -149,6 +161,6 @@
 }
 
 #pagination {
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center;
 }
