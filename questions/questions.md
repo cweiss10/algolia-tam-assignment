@@ -80,7 +80,7 @@ Subject: Error on website
 
 Hi Marc,
 
-Thank you for reaching out. It looks like you are trying to use SearchKit in your index.js file before it has been defined. I would verify that the package has bee installed on your project and you are importing it correctly into index.js.
+Thank you for reaching out. It looks like you are trying to use SearchKit in your index.js file before it has been defined. I would verify that the package has been installed on your project and you are importing it correctly into index.js.
 
 Please note that SearchKit is toolkit that is not maintained by Algolia. It may be best to reach out to the SearchKit team directly for any further questions. 
 
